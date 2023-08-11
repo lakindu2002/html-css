@@ -1,0 +1,33 @@
+p {
+  background-color: rgb(114, 92, 173);
+  color: whitesmoke;
+}
+
+.container {
+  border: 2px solid black;
+  /* left top right bottom */
+  margin: 10px;
+  padding: 5px;
+}
+
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(158, 138, 158);
+  color: black;
+  padding: 5px;
+}
+
+.text {
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.text:hover {
+  background: blue;
+}
+
+.transition {
+  transition: 1s ease-in-out;
+}

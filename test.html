@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <style>
+      /* child selectors */
+      /* a to be the first child of p */
+      /* p > a {
+        color: red;
+      } */
+
+      /* a can be occuring anytime inside u */
+      u a {
+        color: red;
+      }
+
+      /* the first P which is a sibling of H1 */
+      h1 + p {
+        color: blue;
+      }
+
+      /* all P which is a sibling of div, after the div. */
+      div ~ p {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <b>
+        <u>
+          <a>Go to Google</a>
+        </u>
+        <u>
+          <a>Go to Google</a>
+        </u>
+      </b>
+      <b>
+        <u>
+          <a>Go to Google</a>
+        </u>
+      </b>
+    </p>
+    <ul>
+      <li>
+        <p>
+          <a>Go to APIIT</a>
+        </p>
+      </li>
+    </ul>
+    <u>
+      <a>Go to My Class</a>
+    </u>
+    <h1>H1</h1>
+    <p>After H1 P1</p>
+    <div>
+      <p>Inside Div</p>
+    </div>
+    <p>After H1 P2</p>
+    <p>After H1 P3</p>
+    <p>After H1 P3</p>
+  </body>
+</html>
