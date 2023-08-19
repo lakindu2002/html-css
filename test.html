@@ -1,61 +1,113 @@
 <html>
   <head>
     <style>
-      /* child selectors */
-      /* a to be the first child of p */
-      /* p > a {
-        color: red;
-      } */
-
-      /* a can be occuring anytime inside u */
-      u a {
-        color: red;
+      .hover {
+        cursor: pointer;
       }
 
-      /* the first P which is a sibling of H1 */
-      h1 + p {
-        color: blue;
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
       }
 
-      /* all P which is a sibling of div, after the div. */
-      div ~ p {
-        color: pink;
+      .grid-item {
+        padding: 50px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+
+      .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        gap: 50px;
       }
     </style>
   </head>
   <body>
-    <p>
-      <b>
-        <u>
-          <a>Go to Google</a>
-        </u>
-        <u>
-          <a>Go to Google</a>
-        </u>
-      </b>
-      <b>
-        <u>
-          <a>Go to Google</a>
-        </u>
-      </b>
-    </p>
-    <ul>
-      <li>
-        <p>
-          <a>Go to APIIT</a>
-        </p>
-      </li>
-    </ul>
-    <u>
-      <a>Go to My Class</a>
-    </u>
-    <h1>H1</h1>
-    <p>After H1 P1</p>
-    <div>
-      <p>Inside Div</p>
+    <!-- <div class="grid-container">
+      <div
+        class="hover grid-item"
+        style="
+          background-image: url('./assets/images/banner.jpg');
+          height: 500px;
+          visibility: hidden;
+        "
+      >
+        <button>Click my page</button>
+        <h1>Welcome to my Page</h1>
+      </div>
+      <div class="grid-item" style="position: relative">
+        <button>Click my page</button>
+        <h1>Welcome to my Page</h1>
+      </div>
     </div>
-    <p>After H1 P2</p>
-    <p>After H1 P3</p>
-    <p>After H1 P3</p>
+    <hr />
+    <div
+      style="
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+      "
+    >
+      <div>
+        <button>Click my page</button>
+      </div>
+      <div style="width: 100%">
+        <button>Click my page</button>
+        <h1>Welcome to my Page</h1>
+      </div>
+      <div style="width: 100%">
+        <button>Click my page</button>
+        <h1>Welcome to my Page</h1>
+      </div>
+      <div style="width: 100%">
+        <h1>Welcome to my Pagasdasdasdsde</h1>
+      </div>
+    </div> -->
+
+    <div class="flex-container">
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+      <img src="./assets/images/banner.jpg" width="20px" height="50px" />
+      <button>Click Me</button>
+      <input />
+    </div>
   </body>
 </html>

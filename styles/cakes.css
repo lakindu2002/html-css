@@ -1,6 +1,7 @@
 p {
   background-color: rgb(114, 92, 173);
   color: whitesmoke;
+  text-indent: 10px;
 }
 
 .container {
@@ -16,6 +17,7 @@ h2 {
   background-color: rgb(158, 138, 158);
   color: black;
   padding: 5px;
+  text-shadow: 10px 10px blue;
 }
 
 .text {
@@ -30,4 +32,64 @@ h2 {
 
 .transition {
   transition: 1s ease-in-out;
+}
+
+#mainNav ul {
+  list-style-type: circle;
+  padding: 0;
+  margin: 0;
+  background-color: #acadee;
+  transition: 0.5s ease-in-out;
+  width: 250px;
+}
+
+#mainNav ul:hover {
+  background-color: #acadee19;
+}
+
+#mainNav li {
+  padding: 0.5em;
+  border: 1px rgb(240, 240, 240) solid;
+}
+
+#mainNav a {
+  min-height: 50px;
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+a:visited {
+  color: red;
+}
+
+a:link {
+  color: blue;
+}
+
+#facts p:nth-of-type(3) {
+  background-color: blue;
+  color: black;
+}
+
+#myIngredients li:nth-of-type(odd) {
+  background-color: yellow;
+  color: black;
+}
+
+#myIngredients li:nth-of-type(even) {
+  background-color: orange;
+}
+
+#mainHeader {
+  height: 100px;
+  padding: 1em;
+  background: black url("images/logo.png") no-repeat 1em center;
+}
+
+h1 {
+  margin: 0;
+  font-family: Helvetica, Tahoma, sans-serif;
+  color: hotpink;
+  padding: 35px 0px 35px 100px;
 }
